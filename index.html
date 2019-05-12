@@ -4,6 +4,7 @@
 		<title>Tim's Home</title>
 		<!-- p5.js script -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js" integrity="sha256-KDK3xm/GlUAv2dBVItuCM6jjCCtAVrjEfsdpcuMbN5M=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js" integrity="sha256-a6uP+lfJTznPH4/eUqQFX3/sULwjHbfGtUjy8CWPooI=" crossorigin="anonymous"></script>
 		<!-- Custom styling -->
 		<style>
 			body {
@@ -12,7 +13,7 @@
   				display: flex;
   				justify-content: center;
   				align-items: center;
-  				background-color: orange;
+  				background: linear-gradient(110deg, #f48642 40%, #f4c441 60%);
 			}
 			canvas {
   				box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.7);
@@ -24,6 +25,7 @@
 			function setup() {
   				createCanvas(500, 500);
   				noStroke();
+  				noLoop();
 			}
 
 			function draw() {
@@ -38,7 +40,7 @@
   				//insert text
   				textSize(75);
   				textAlign(CENTER);
-  				text('Home', 250, 75);
+  				text('Index', 250, 75);
 			}
 		</script>
 	</body>
