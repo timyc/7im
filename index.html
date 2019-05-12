@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Tim's Home</title>
+		<!-- p5.js script -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js" integrity="sha256-KDK3xm/GlUAv2dBVItuCM6jjCCtAVrjEfsdpcuMbN5M=" crossorigin="anonymous"></script>
+		<!-- Custom styling -->
+		<style>
+			body {
+				height: 100vh;
+  				margin: 0;
+  				display: flex;
+  				justify-content: center;
+  				align-items: center;
+  				background-color: orange;
+			}
+			canvas {
+  				box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.7);
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			function setup() {
+  				createCanvas(500, 500);
+  				noStroke();
+			}
+
+			function draw() {
+				//draw rectangle
+				rectMode(RADIUS);
+  				fill('purple');
+  				rect(0, 0, window.innerWidth, window.innerHeight);
+  				//draw circle
+  				ellipseMode(RADIUS);
+  				fill('orange');
+  				ellipse(250, 250, 150, 150);
+  				//insert text
+  				textSize(75);
+  				textAlign(CENTER);
+  				text('Home', 250, 75);
+			}
+		</script>
+	</body>
+</html>
